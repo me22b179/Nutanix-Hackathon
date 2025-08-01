@@ -1,11 +1,11 @@
 
-# 🔄 Real-Time File Synchronization System
+# Real-Time File Synchronization System
 
 This project implements a real-time, multi-client file synchronization system using low-level Linux system programming. It leverages inotify for monitoring directory changes and TCP sockets for network communication.
 
 ---
 
-## 📁 Files Included
+## 1. Files Included
 
 ### 1. `q1.c` – System Setup Script
 This file is designed to **prepare the environment** before starting synchronization. It may:
@@ -61,7 +61,7 @@ Example:
 
 ---
 
-## ⚙️ Features
+## 2. Features
 
 - Real-time synchronization using `inotify`.
 - Multi-client support with threading.
@@ -71,7 +71,7 @@ Example:
 
 ---
 
-## 📋 Requirements
+## 3. Requirements
 
 - Linux system (with inotify support)
 - GCC compiler
@@ -79,7 +79,7 @@ Example:
 
 ---
 
-## 📌 How to Run the Project
+## 4. How to Run the Project
 
 1. **Compile and run `q1.c`** to set up the environment.
 2. **Start the server** on the machine hosting the source directory:
@@ -93,7 +93,7 @@ Example:
 
 ---
 
-## 📂 Example `ignore.txt`
+## 5. Example `ignore.txt`
 ```
 .mp4,.exe,.zip
 ```
@@ -101,7 +101,7 @@ Example:
 
 ---
 
-## 📌 Note
+## 6. Note
 
 - All file changes (create, move, delete) are synced from server to clients in real-time.
 - Only one-way sync (server → clients) is currently implemented.
